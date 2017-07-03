@@ -1,0 +1,39 @@
+---
+title: "Simple Polynomial Fitting Model Calculator User Guide"
+author: "Roberto Diaz Ortega"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Introduction
+
+This document shows a quick guide to use the polynomial fit calculator created in shiny as the project for the Coursera Developing Data Products course. 
+
+## Control Definitions
+
+| Control          | Explanation                |
+|------------------|----------------------------|
+| x value          | x coordinate for point     |
+| y value          | y coordinate for point     |
+| add Point        | add point to de dataset    |
+| row delete       | number row to delete       |
+| Delete           | button to confirm delete   |
+| Model order      | order for polynomial model |
+| Generate Model   | Button to generate de model|
+
+## How to Use
+
+1. add x and y value
+2. press add point to save the point
+
+Repeat this process to add all the points that you need. If you have any mistake when introduce the data you can delete the row using the delete input row number and delete button. 
+
+3. Select the model order
+4. Press the Generate Model button
+
+The tool automatically will create the model and it will show the different coefficients for the polynomial equation and the R square value to give you an idea about how precise is your model. 
+
+
